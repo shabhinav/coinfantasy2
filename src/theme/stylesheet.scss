@@ -1,0 +1,511 @@
+@import "./variable.scss";
+
+// Display flex and all its properties
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+// different  text sizes
+
+.text-xxl {
+  font-size: $text-xxl;
+}
+.text-xl {
+  font-size: $text-xl;
+}
+.text-lg {
+  font-size: $text-lg;
+}
+.text-md {
+  font-size: $text-md;
+}
+.text-base {
+  font-size: $text-base;
+}
+.text-sm {
+  font-size: $text-sm;
+}
+.text-xs {
+  font-size: $text-xs;
+}
+.text-xxs {
+  font-size: $text-xxs;
+}
+.text-xxxs {
+  font-size: $text-xxxs;
+}
+
+// different  text font weight
+
+.font-black {
+  font-weight: $font-black;
+}
+.font-extrabold {
+  font-weight: $font-extrabold;
+}
+.font-bold {
+  font-weight: $font-bold;
+}
+.font-semibold {
+  font-weight: $font-semibold;
+}
+.font-medium {
+  font-weight: $font-medium;
+}
+.font-normal {
+  font-weight: $font-normal;
+}
+.font350 {
+  font-weight: $font350;
+}
+.font325 {
+  font-weight: $font325;
+}
+.font-light {
+  font-weight: $font-light;
+}
+.font-extralight {
+  font-weight: $font-extralight;
+}
+.font-thin {
+  font-weight: $font-thin;
+}
+
+// Line height
+
+.line-height17 {
+  line-height: $line-height17;
+}
+
+// text alignment
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+//cursor type
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+//text-transform
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+//common margin shorthands
+
+.margin-short-subhead {
+  margin: auto auto 0.5rem 5%;
+}
+
+.margin-short-subsubhead {
+  margin: auto auto 1rem 5%;
+}
+
+//border
+
+.border {
+  border: 1px solid $grayBorderColor;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $grayBorderColor;
+}
+
+.border-lightBlack {
+  border: 1px solid #0000001f;
+}
+
+.border-b-lightBlack {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+
+.border-t-lightBlack {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+
+.border-left-green500 {
+  border-left: 5px solid $green500;
+}
+
+.border-none {
+  border: none;
+}
+
+// display
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+// text colors
+
+.text-primary {
+  color: $primaryColor;
+}
+
+.text-white {
+  color: $whiteColor;
+}
+
+.text-black {
+  color: $blackColor;
+}
+
+.text-gray800 {
+  color: $gray800;
+}
+
+.text-link500 {
+  color: $link500;
+}
+
+.text-gray600 {
+  color: $gray600;
+}
+
+.text-gray700 {
+  color: $gray700;
+}
+
+.text-blue500 {
+  color: $blue500;
+}
+
+.text-black400 {
+  color: $black400;
+}
+
+.text-green500 {
+  color: $green500;
+}
+
+.text-green600 {
+  color: $green600;
+}
+
+.text-primary-700 {
+  color: $primary700;
+}
+
+.text-gray900 {
+  color: $gray900;
+}
+
+.text-red {
+  color: rgb(160, 76, 76);
+}
+
+// background color
+
+.bg-primary {
+  background-color: $primaryColor;
+}
+
+.bg-primary100 {
+  background-color: $primary100;
+}
+
+.bg-primary200 {
+  background-color: $primary200;
+}
+
+.bg-white {
+  background-color: $whiteColor;
+}
+
+.bg-black {
+  background-color: $blackColor;
+}
+
+.bg-gray300 {
+  background-color: $gray300;
+}
+
+.bg-gray100 {
+  background-color: $gray100;
+}
+.bg-pink200 {
+  background-color: $pink200;
+}
+.bg-gray250 {
+  background-color: $gray250;
+}
+.bg-blue100 {
+  background-color: $blue100;
+}
+.bg-orange100 {
+  background-color: $orange100;
+}
+.bg-green100 {
+  background-color: $green100;
+}
+// margin padding top bottom left right
+
+.m-auto {
+  margin: auto;
+}
+
+@for $i from 0 through 100 {
+  //margin
+  .m-#{$i} {
+    margin: 1rem * $i/4;
+  }
+  .mt-#{$i} {
+    margin-top: 1rem * $i/4;
+  }
+  .mb-#{$i} {
+    margin-bottom: 1rem * $i/4;
+  }
+  .ml-#{$i} {
+    margin-left: 1rem * $i/4;
+  }
+  .mr-#{$i} {
+    margin-right: 1rem * $i/4;
+  }
+  .mx-#{$i} {
+    margin-right: 1rem * $i/4;
+    margin-left: 1rem * $i/4;
+  }
+  .my-#{$i} {
+    margin-top: 1rem * $i/4;
+    margin-bottom: 1rem * $i/4;
+  }
+
+  //padding
+  .p-#{$i} {
+    padding: 1rem * $i/4;
+  }
+  .pt-#{$i} {
+    padding-top: 1rem * $i/4;
+  }
+  .pb-#{$i} {
+    padding-bottom: 1rem * $i/4;
+  }
+  .pl-#{$i} {
+    padding-left: 1rem * $i/4;
+  }
+  .pr-#{$i} {
+    padding-right: 1rem * $i/4;
+  }
+  .px-#{$i} {
+    padding-right: 1rem * $i/4;
+    padding-left: 1rem * $i/4;
+  }
+  .py-#{$i} {
+    padding-top: 1rem * $i/4;
+    padding-bottom: 1rem * $i/4;
+  }
+
+  //top  bottom left right
+  .top-#{$i} {
+    top: 1rem * $i/4;
+  }
+
+  .bottom-#{$i} {
+    bottom: 1rem * $i/4;
+  }
+
+  .right-#{$i} {
+    right: 1rem * $i/4;
+  }
+
+  .left-#{$i} {
+    left: 1rem * $i/4;
+  }
+
+  // height and width
+
+  .h-#{$i} {
+    height: 1rem * $i/4;
+  }
+
+  .w-#{$i} {
+    width: 1rem * $i/4;
+  }
+
+  .min-h-#{$i} {
+    min-height: 1rem * $i/4;
+  }
+
+  .min-w-#{$i} {
+    min-width: 1rem * $i/4;
+  }
+
+  .-m-#{$i} {
+    margin: -1rem * $i/8;
+  }
+  .-mt-#{$i} {
+    margin-top: -1rem * $i/8;
+  }
+  .-mb-#{$i} {
+    margin-bottom: -1rem * $i/8;
+  }
+  .-ml-#{$i} {
+    margin-left: -1rem * $i/8;
+  }
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-50-per {
+  width: 50%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+// z - index
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+// shadow
+
+.shadow-lg {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-sm {
+  box-shadow: 0px 1px 4px #00000033;
+}
+
+// overflow
+
+.overflow-auto {
+  overflow: auto;
+}
+
+// Font Family
+
+.gotham-medium {
+  font-family: "Gotham Rounded Medium";
+}
+
+.gotham-book {
+  font-family: "Gotham Rounded Book";
+}
+
+.border-rounded {
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 640px) {
+  .xs-hidden {
+    display: none;
+  }
+}
+
+.gothamBold {
+  font-family: GothamBold;
+}
