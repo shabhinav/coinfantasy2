@@ -1,12 +1,14 @@
 import React from "react";
 
-const Button = ({ label, onClick }) => {
+const Button = ({ label, onClick, isSelected }) => {
   return (
     <button
-      className={`bg-white border-none mx-2 shadow-lg p-2 border-rounded cursor-pointer `}
+      className={`bg-white border-none mx-2 shadow-lg p-2 border-rounded cursor-pointer ${
+        isSelected ? "text-primary" : ""
+      }`}
       onClick={() => onClick(label)}
     >
-      {label} hr
+      {label} days
     </button>
   );
 };
