@@ -24,9 +24,8 @@ const AreChart = ({data}) => {
             <stop offset='90%' stopColor='#8884d8' stopOpacity={0} />
           </linearGradient>
         </defs>
-        <XAxis dataKey='name' />
-        <YAxis />
-        <CartesianGrid strokeDasharray='3 3' />
+        <XAxis dataKey='name' tick={false} />
+        <YAxis tick={false} axisLine={false} />
         <Tooltip />
         <Area
           type='monotone'

@@ -2,7 +2,7 @@ import "./App.css";
 import "./theme/stylesheet.scss";
 import { useEffect, useState } from "react";
 import { searchData } from "./api";
-import { timeStampToDateHandler } from "./utils";
+import { numFormatter, timeStampToDateHandler } from "./utils";
 import Button from "./Common/Button";
 import { duration } from "./utils/constant";
 import AreChart from "./Common/Charts/AreaChart";
@@ -17,9 +17,14 @@ function App() {
 
   const changeDurationHandler = () => {
     searchData(durations)
-      .then(({ data: { prices } }) => {
-        let array = prices?.map((item) => {
-          return { name: timeStampToDateHandler(item?.[0]), value: item?.[1] };
+      .then(({ data: { prices, market_caps, total_volumes } }) => {
+        let array = prices?.map((item, index) => {
+          return {
+            name: timeStampToDateHandler(item?.[0]),
+            value: item?.[1],
+            market_cap: market_caps[index][1],
+            total_volumes: total_volumes[index][1],
+          };
         });
         setMyData(array);
       })
@@ -29,6 +34,8 @@ function App() {
   const onClickHandler = (label) => {
     setDuration(label);
   };
+
+  console.log("myData", myData);
 
   return (
     <div className='App'>
@@ -59,6 +66,20 @@ function App() {
         </div>
         <div className='mt-4'>
           <AreChart data={myData} />
+        </div>
+        <div className='flex justify-between'>
+          <div>
+            <h4>TOTAL MARKET VALUE</h4>
+            <p className='text-green500'>
+              $ {numFormatter(myData[0]?.market_cap)}
+            </p>
+          </div>
+          <div>
+            <h4>24 hr Volume</h4>
+            <p className='text-green500'>
+              $ {numFormatter(myData[0]?.total_volumes)}
+            </p>
+          </div>
         </div>
       </div>
     </div>
