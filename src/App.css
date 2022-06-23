@@ -2,3 +2,17 @@
 .recharts-surface {
   width: 100% !important;
 }
+
+.graph-container {
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .graph-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* w-50-per m-auto */

@@ -32,13 +32,13 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='shadow-lg w-50-per m-auto p-4'>
+      <div className='shadow-lg graph-container  p-4'>
         <div className='flex items-center'>
           <h1>BITCOIN (BTC)</h1>
           <div className='ml-4'>
             <p className='my-0'>Date: {myData[myData?.length - 1]?.name}</p>
             <p className='text-green500 my-0 mt-2'>
-             Price: ${myData[myData?.length - 1]?.value.toFixed(2)}
+              Price: ${myData[myData?.length - 1]?.value.toFixed(2)}
             </p>
           </div>
         </div>
